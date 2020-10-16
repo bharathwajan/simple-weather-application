@@ -32,7 +32,7 @@ class bharathwajan(MDApp):
                         b=a   #there are two b's and b selected in dialog box is based on if condition 
                 close_button=MDFlatButton(text='close',on_release=self.close_dialog)
                 more_button=MDFlatButton(text='more')
-                url='http://api.openweathermap.org/data/2.5/weather?q='+a+'&appid=298ab7b018fb976afc348901a83a9ec8'
+                url='http://api.openweathermap.org/data/2.5/weather?q='+a+'&appid=put_your_api_key_here'
                 result=requests.get(url).json()
                 c=result['weather']#list
                 d=c[0]#dict
